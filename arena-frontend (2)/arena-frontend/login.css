@@ -1,0 +1,64 @@
+.login {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  min-height: 100vh;
+}
+
+.login__marca {
+  background: var(--verde-escuro);
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 24px;
+  padding: 48px;
+  text-align: center;
+}
+
+.login__marca img {
+  width: clamp(140px, 18vw, 240px);
+}
+
+.wordmark--grande {
+  font-size: clamp(2.5rem, 5vw, 4.25rem);
+}
+
+.login__lema {
+  color: var(--creme);
+  opacity: 0.8;
+  max-width: 26ch;
+}
+
+.login__painel {
+  display: grid;
+  place-content: center;
+  padding: 48px 32px;
+}
+
+.login__form {
+  width: min(360px, 100%);
+  display: grid;
+  gap: 8px;
+}
+
+.login__acoes-secundarias {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.login__acoes-secundarias .btn {
+  font-size: 0.8rem;
+  padding: 0 12px;
+}
+
+@media (max-width: 760px) {
+  .login {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+  .login__marca { padding: 28px; gap: 12px; }
+  .login__marca img { width: 90px; }
+  .wordmark--grande { font-size: 2rem; }
+  .login__lema { display: none; }
+}

@@ -1,0 +1,67 @@
+:root {
+  --verde-escuro: #063e29;
+  --oliva: #5e7050;
+  --vermelho: #b01f24;
+  --vermelho-escuro: #8f171b;
+  --creme: #f4f1e8;
+  --fundo: #f7f8fa;
+  --texto: #16231c;
+  --texto-suave: #55625a;
+  --campo: #e2e3e2;
+  --borda: #d5d9d6;
+
+  --raio: 8px;
+  --fonte: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; }
+
+body {
+  font-family: var(--fonte);
+  color: var(--texto);
+  background: var(--fundo);
+  line-height: 1.5;
+}
+
+img { max-width: 100%; display: block; }
+
+:focus-visible { outline: 3px solid var(--oliva); outline-offset: 2px; }
+
+.wordmark {
+  font-weight: 800;
+  font-stretch: 125%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--creme);
+}
+.wordmark span { color: var(--vermelho); }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 40px; padding: 0 20px;
+  border: 1px solid transparent; border-radius: var(--raio);
+  font: inherit; font-size: 0.9rem; font-weight: 700;
+  text-decoration: none; cursor: pointer;
+}
+.btn--primario { background: var(--vermelho); color: #fff; }
+.btn--primario:hover { background: var(--vermelho-escuro); }
+.btn--contorno { background: #fff; color: var(--texto); border-color: var(--texto); }
+.btn--contorno:hover { background: var(--creme); }
+
+.campo { display: grid; gap: 6px; }
+.campo label { font-size: 0.85rem; font-weight: 700; }
+.campo input {
+  height: 44px; padding: 0 14px;
+  background: var(--campo); border: 2px solid transparent; border-radius: var(--raio);
+  font: inherit; color: var(--texto);
+}
+.campo input:focus { outline: none; border-color: var(--verde-escuro); background: #fff; }
+.campo--invalido input { border-color: var(--vermelho); }
+.campo__erro { min-height: 1.2em; font-size: 0.8rem; color: var(--vermelho); }
+
+.alerta {
+  padding: 10px 14px; border-radius: var(--raio);
+  font-size: 0.9rem; font-weight: 600;
+}
+.alerta--erro { color: var(--vermelho); background: #fdf0f0; border: 1px solid var(--vermelho); }
+.alerta[hidden] { display: none; }
