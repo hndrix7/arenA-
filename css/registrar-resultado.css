@@ -1,0 +1,137 @@
+.container-resultado {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.cabecalho-pagina {
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+.cabecalho-pagina h1 {
+    color: var(--verde-escuro);
+    margin-bottom: 10px;
+}
+
+.partida-info {
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.partida-info h2 {
+    color: var(--verde-escuro);
+    margin-bottom: 20px;
+}
+
+.detalhes-partida {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.detalhes-partida div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formulario-resultado {
+    padding: 30px;
+}
+
+.formulario-resultado h2 {
+    color: var(--verde-escuro);
+    margin-bottom: 25px;
+}
+
+.placar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    margin-bottom: 30px;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.time input {
+    width: 100px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.versus {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--verde-escuro);
+}
+
+.grupo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.grupo-formulario input,
+.grupo-formulario textarea,
+.grupo-formulario select,
+.time input {
+    padding: 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+}
+
+.acoes-formulario {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-cancelar {
+    background: #d1d5db;
+    color: #111827;
+    padding: 12px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn-salvar {
+    background: var(--verde-escuro);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-salvar:hover {
+    background: var(--verde);
+}
+
+@media (max-width: 768px) {
+
+    .placar-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .acoes-formulario {
+        flex-direction: column;
+    }
+
+    .btn-cancelar,
+    .btn-salvar {
+        width: 100%;
+        text-align: center;
+    }
+}

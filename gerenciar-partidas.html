@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arena+ | Gerenciar Partidas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/gerenciar-partidas.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="assets/marca-arena.svg" alt="Arena+">
+            </div>
+
+            <ul class="menu">
+                <li><a href="home.html">Início</a></li>
+                <li><a href="campeonatos.html">Campeonatos</a></li>
+                <li><a href="calendario.html">Calendário</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="container-partidas">
+
+        <!-- CABEÇALHO -->
+        <section class="card cabecalho-pagina">
+
+            <h1>⚽ Gerenciar Partidas</h1>
+
+            <p>
+                Gerencie os confrontos, horários e resultados do campeonato.
+            </p>
+
+        </section>
+
+        <!-- BOTÃO PRINCIPAL -->
+        <section class="acoes-topo">
+
+            <button class="btn-criar">
+                + Nova Partida
+            </button>
+
+        </section>
+
+        <!-- TABELA DE PARTIDAS -->
+        <section class="card tabela-partidas">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Equipe A</th>
+                        <th>Equipe B</th>
+                        <th>Data</th>
+                        <th>Horário</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Tigres FC</td>
+                        <td>Leões SC</td>
+                        <td>30/11/2026</td>
+                        <td>19:00</td>
+
+                        <td>
+                            <span class="status andamento">
+                                Em Andamento
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <button class="acao editar">
+                                Editar
+                            </button>
+
+                            <a href="registrar-resultado.html"
+                               class="acao resultado">
+                                Registrar Resultado
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Falcões</td>
+                        <td>Lobos</td>
+                        <td>01/12/2026</td>
+                        <td>20:00</td>
+
+                        <td>
+                            <span class="status agendada">
+                                Agendada
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <button class="acao editar">
+                                Editar
+                            </button>
+
+                            <a href="registrar-resultado.html"
+                               class="acao resultado">
+                                Registrar Resultado
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Sharks</td>
+                        <td>Panthers</td>
+                        <td>28/11/2026</td>
+                        <td>18:00</td>
+
+                        <td>
+                            <span class="status finalizada">
+                                Finalizada
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <button class="acao editar">
+                                Editar
+                            </button>
+
+                            <a href="registrar-resultado.html"
+                               class="acao resultado">
+                                Ver Resultado
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Águias</td>
+                        <td>Fênix</td>
+                        <td>02/12/2026</td>
+                        <td>15:30</td>
+
+                        <td>
+                            <span class="status agendada">
+                                Agendada
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <button class="acao editar">
+                                Editar
+                            </button>
+
+                            <a href="registrar-resultado.html"
+                               class="acao resultado">
+                                Registrar Resultado
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- RESULTADOS RECENTES -->
+        <section class="card resultados-recentes">
+
+            <h2>🏆 Últimos Resultados</h2>
+
+            <div class="resultado-item">
+                <strong>Tigres FC</strong>
+                <span>3 x 1</span>
+                <strong>Sharks</strong>
+            </div>
+
+            <div class="resultado-item">
+                <strong>Panthers</strong>
+                <span>2 x 2</span>
+                <strong>Leões SC</strong>
+            </div>
+
+            <div class="resultado-item">
+                <strong>Falcões</strong>
+                <span>1 x 0</span>
+                <strong>Lobos</strong>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
