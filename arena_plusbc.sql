@@ -163,7 +163,7 @@ CREATE TABLE IF NOT EXISTS inscricao (
 
 -- -------------------------
 -- 8. PARTIDA
--- FKs compostas asseguram que as duas inscrições pertencem ao campeonato.
+-- FKs compostas garantem que as duas inscrições pertencem ao campeonato.
 -- -------------------------
 CREATE TABLE IF NOT EXISTS partida (
     id_partida BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -317,12 +317,10 @@ CREATE TABLE IF NOT EXISTS historico_campeonato (
         ON UPDATE CASCADE ON DELETE RESTRICT
 ) ENGINE=InnoDB;
 
--- =============================================================
+-- ===========================================================
 -- VIEW: classificação calculada somente a partir de resultados CONFIRMADOS
--- Critérios de ordenação: pontos, saldo, pontos marcados, vitórias.
--- Empate residual: id_inscricao (ordem determinística; regra oficial de desempate
--- precisa ser confirmada/documentada pelo PO).
--- =============================================================
+-- Critérios de desempate: pontos, saldo, pontos marcados, vitórias.
+-- ================================================================
 CREATE OR REPLACE VIEW vw_classificacao AS
 WITH desempenho AS (
     SELECT
@@ -393,11 +391,11 @@ SELECT
     ) AS posicao
 FROM pontuacao;
 
--- =============================================================
+-- ======================================================================
 -- TRIGGERS: validações de negócio no banco e trilha de auditoria.
 -- Regras de autorização (diretor/organizador) ainda são do backend;
 -- estes triggers protegem estados/integridade, não substituem autorização.
--- =============================================================
+-- ====================================================================
 
 DROP TRIGGER IF EXISTS trg_inscricao_bi;
 DROP TRIGGER IF EXISTS trg_inscricao_bu;
@@ -597,24 +595,6 @@ FROM INFORMATION_SCHEMA.TABLES
 WHERE TABLE_SCHEMA = DATABASE()
 ORDER BY TABLE_NAME;
 
--- Exemplo de consulta à classificação:
--- SELECT * FROM vw_classificacao WHERE id_campeonato = 1 ORDER BY posicao;
-
-
-USE arena;
-
-SHOW TABLES;
-
-SHOW CREATE TABLE partida;
-
-SHOW TRIGGERS FROM arena;
-
-
-SELECT * FROM campeonato;
-SELECT * FROM equipe;
-SELECT * FROM inscricao;
-
-DESCRIBE usuario;
-DESCRIBE campeonato;
-DESCRIBE equipe;
-DESCRIBE inscricao;
+-- ===========================================
+-- Banco de Dados finalizado.
+-- ===========================================
