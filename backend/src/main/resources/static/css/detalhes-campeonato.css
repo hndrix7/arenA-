@@ -1,0 +1,27 @@
+.detalhes-campeonato{
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.status{
+    display: inline-block;
+    background: #22c55e;
+    color: white;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.detalhes-campeonato h1{
+    margin-bottom: 1rem;
+}
+
+.ranking-campeonato{
+    margin-top: 2rem;
+}
+
+.ranking-campeonato h2,
+.jogos h2{
+    margin-bottom: 1.5rem;
+}

@@ -1,0 +1,85 @@
+.container-campeonatos {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.hero-campeonatos {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-campeonatos h1 {
+    color: var(--verde-escuro);
+    margin-bottom: 10px;
+}
+
+.lista-campeonatos {
+    display: grid;
+    gap: 25px;
+}
+
+.campeonato-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.campeonato-card:hover {
+    transform: translateY(-4px);
+}
+
+.status {
+    display: inline-block;
+    background: #22c55e;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.campeonato-card h2 {
+    color: var(--verde-escuro);
+    margin-bottom: 10px;
+}
+
+.campeonato-card p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.campeonato-info {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.campeonato-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.campeonato-info strong {
+    color: var(--verde-escuro);
+    margin-bottom: 4px;
+}
+
+.btn-detalhes {
+    display: inline-block;
+    background: var(--verde-escuro);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-detalhes:hover {
+    background: var(--verde);
+}

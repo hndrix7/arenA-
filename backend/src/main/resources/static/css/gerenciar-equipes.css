@@ -1,0 +1,156 @@
+.container-equipes {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.cabecalho-pagina {
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+.cabecalho-pagina h1 {
+    color: var(--verde-escuro);
+    margin-bottom: 10px;
+}
+
+.cabecalho-pagina p {
+    color: #555;
+}
+
+.acoes-topo {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.btn-criar {
+    background: var(--verde-escuro);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-criar:hover {
+    background: var(--verde);
+}
+
+.tabela-equipes {
+    padding: 25px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+thead {
+    background: var(--verde-escuro);
+    color: white;
+}
+
+th {
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.status.ativo {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.status.pendente {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.acao {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 6px;
+    transition: 0.3s;
+}
+
+.acao.editar {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.acao.editar:hover {
+    background: #bfdbfe;
+}
+
+.acao.excluir {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.acao.excluir:hover {
+    background: #fecaca;
+}
+
+@media (max-width: 768px) {
+
+    .acoes-topo {
+        justify-content: stretch;
+    }
+
+    .btn-criar {
+        width: 100%;
+    }
+
+    .tabela-equipes {
+        padding: 15px;
+    }
+
+    th,
+    td {
+        padding: 12px;
+    }
+}
+
+.acao.atletas {
+    background: #dcfce7;
+    color: #15803d;
+    text-decoration: none;
+}
+
+.acao.atletas:hover {
+    background: #bbf7d0;
+}
+
+.link-atletas {
+    color: var(--verde-escuro);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link-atletas:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,122 @@
+/*PÁGINA DE CADASTRO*/
+
+.cadastro {
+    min-height: 100vh;
+    display: flex;
+    background-color: #014d39;
+}
+
+/* ÁREA DA LOGO */
+
+.login__marca {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    padding-top: 40px;
+    align-items: center;
+
+    background-color: #014d39;
+    color: white;
+
+    padding: 40px;
+}
+
+.login__marca img {
+    width: 220px;
+    max-width: 80%;
+    height: auto;
+}
+
+.login__lema {
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*FORMULÁRIO*/
+
+.form-criar-conta {
+    width: 700px;
+
+    background: white;
+
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+/* LINHAS*/
+
+.linha {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+/*CAMPOS*/
+
+.campo {
+    min-width: 0;
+    flex: 1;
+}
+
+.campo label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #222;
+}
+
+.campo input {
+    width: 100%;
+
+}
+
+.campo select,
+.campo textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.campo textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #014d39;
+    box-shadow: 0 0 5px rgba(1, 77, 57, 0.4);
+}
+
+/* RESPONSIVIDADE DA TELA */
+@media screen and (max-width: 1100px) {
+
+    .cadastro {
+        flex-direction: column;
+    }
+
+    .login__marca {
+        width: 100%;
+        min-width: 0; /* adicionar */
+        min-height: 250px;
+    }
+
+    .form-criar-conta {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .linha {
+        flex-direction: column;
+    }
+}

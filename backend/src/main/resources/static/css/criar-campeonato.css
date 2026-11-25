@@ -1,0 +1,84 @@
+.container-cadastro{
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.formulario-campeonato{
+    padding: 32px;
+}
+
+.titulo-formulario{
+    margin-bottom: 30px;
+}
+
+.titulo-formulario h1{
+    color: var(--verde-escuro);
+    margin-bottom: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grupo-formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.linha-formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+input,
+select,
+textarea{
+    padding: 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.acoes-formulario{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn-cancelar{
+    background: #ccc;
+    color: #333;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btn-criar{
+    background: #014d39;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-criar:hover{
+    background: #01684d;
+}
+
+@media(max-width:768px){
+
+    .linha-formulario{
+        grid-template-columns: 1fr;
+    }
+
+    .acoes-formulario{
+        flex-direction: column;
+    }
+}

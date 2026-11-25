@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arena+ | Registrar Resultado</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/registrar-resultado.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="assets/marca-arena.svg" alt="Arena+">
+            </div>
+
+            <ul class="menu">
+                <li><a href="home.html">Início</a></li>
+                <li><a href="campeonatos.html">Campeonatos</a></li>
+                <li><a href="calendario.html">Calendário</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="container-resultado">
+
+        <!-- CABEÇALHO -->
+        <section class="card cabecalho-pagina">
+
+            <h1>🏆 Registrar Resultado</h1>
+
+            <p>
+                Informe e confirme o resultado da partida selecionada.
+            </p>
+
+        </section>
+
+        <!-- DADOS DA PARTIDA -->
+        <section class="card partida-info">
+
+            <h2>Tigres FC x Leões SC</h2>
+
+            <div class="detalhes-partida">
+
+                <div>
+                    <strong>Campeonato</strong>
+                    <span>Campeonato Brasileiro de Xadrez</span>
+                </div>
+
+                <div>
+                    <strong>Data</strong>
+                    <span>30/11/2026</span>
+                </div>
+
+                <div>
+                    <strong>Horário</strong>
+                    <span>19:00</span>
+                </div>
+
+                <div>
+                    <strong>Status</strong>
+                    <span>Em Andamento</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FORMULÁRIO -->
+        <section class="card formulario-resultado">
+
+            <form>
+
+                <h2>Resultado Final</h2>
+
+                <div class="placar-container">
+
+                    <div class="time">
+
+                        <label for="placarA">
+                            Tigres FC
+                        </label>
+
+                        <input
+                            type="number"
+                            id="placarA"
+                            min="0"
+                            placeholder="0">
+
+                    </div>
+
+                    <span class="versus">X</span>
+
+                    <div class="time">
+
+                        <label for="placarB">
+                            Leões SC
+                        </label>
+
+                        <input
+                            type="number"
+                            id="placarB"
+                            min="0"
+                            placeholder="0">
+
+                    </div>
+
+                </div>
+
+                <div class="grupo-formulario">
+
+                    <label for="observacoes">
+                        Observações
+                    </label>
+
+                    <textarea
+                        id="observacoes"
+                        rows="4"
+                        placeholder="Informações adicionais sobre a partida..."></textarea>
+
+                </div>
+
+                <div class="grupo-formulario">
+
+                    <label for="statusResultado">
+                        Status do Resultado
+                    </label>
+
+                    <select id="statusResultado">
+
+                        <option>Confirmado</option>
+                        <option>Pendente de Confirmação</option>
+
+                    </select>
+
+                </div>
+
+                <div class="acoes-formulario">
+
+                    <a href="gerenciar-partidas.html" class="btn-cancelar">
+                        Cancelar
+                    </a>
+
+                    <button type="submit" class="btn-salvar">
+                        Salvar Resultado
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arena+ | Criar Conta Diretor</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/criar.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+
+    <main class="cadastro">
+
+        <!-- Área da Marca -->
+        <section class="login__marca" aria-label="Arena+">
+            <img src="assets/marca-arena.svg" alt="Logo Arena+">
+
+            <p class="wordmark wordmark--grande">
+                Arena<span>+</span>
+            </p>
+
+            <h1 class="login__lema">
+                Crie Sua Conta De Diretor
+            </h1>
+        </section>
+
+        <!-- Formulário -->
+        <form class="form-criar-conta">
+
+            <!-- Nome e Sobrenome -->
+            <div class="linha">
+                <div class="campo">
+                    <label for="nome">Nome *</label>
+                    <input
+                        id="nome"
+                        name="nome"
+                        type="text"
+                        autocomplete="given-name"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome">Sobrenome *</label>
+                    <input
+                        id="sobrenome"
+                        name="sobrenome"
+                        type="text"
+                        autocomplete="family-name"
+                        required>
+                </div>
+            </div>
+
+            <!-- Data de Nascimento -->
+            <div class="campo">
+                <label for="nascimento">Data de Nascimento *</label>
+                <input
+                    id="nascimento"
+                    name="nascimento"
+                    type="date"
+                    autocomplete="bday"
+                    required>
+            </div>
+
+            <!-- CPF| placeholder define o formato do CPF -->
+            <div class="campo">
+                <label for="cpf">CPF *</label>
+                <input
+                    id="cpf"
+                    name="cpf"
+                    type="text"
+                    inputmode="numeric"
+                    maxlength="14"
+                    placeholder="000.000.000-00"
+                    pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
+                    required>
+            </div>
+
+            <!-- Email e Telefone -->
+            <div class="linha">
+                <div class="campo">
+                    <label for="email">E-mail *</label>
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone *</label>
+                    <input
+                        id="telefone"
+                        name="telefone"
+                        type="tel"
+                        maxlength="15"
+                        placeholder="(47) 99999-9999"
+                        autocomplete="tel"
+                        required>
+                </div>
+            </div>
+
+            <!-- Endereço -->
+            <h2 class="titulo-secao">Endereço</h2>
+
+            <div class="linha">
+                <div class="campo">
+                    <label for="cep">CEP *</label>
+                    <input id="cep" name="cep" type="text" required>
+                </div>
+
+                <div class="campo">
+                    <label for="cidade">Cidade *</label>
+                    <input id="cidade" name="cidade" type="text" required>
+                </div>
+
+                <div class="campo">
+                    <label for="estado">Estado *</label>
+                    <input id="estado" name="estado" type="text" required>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="bairro">Bairro *</label>
+                <input id="bairro" name="bairro" type="text" required>
+            </div>
+
+            <div class="campo">
+                <label for="rua">Rua *</label>
+                <input id="rua" name="rua" type="text" required>
+            </div>
+
+            <div class="linha">
+                <div class="campo">
+                    <label for="numero">Número *</label>
+                    <input id="numero" name="numero" type="text" required>
+                </div>
+
+                <div class="campo">
+                    <label for="complemento">Complemento</label>
+                    <input id="complemento" name="complemento" type="text">
+                </div>
+            </div>
+
+            <!-- Dados da Equipe -->
+            <h2 class="titulo-secao">Dados da Equipe</h2>
+
+            <div class="campo">
+                <label for="nome-equipe">Nome da Equipe *</label>
+                <input
+                    id="nome-equipe"
+                    name="nome-equipe"
+                    type="text"
+                    placeholder="Ex.: Tigres FC"
+                    required>
+            </div>
+
+            <div class="linha">
+
+                <div class="campo">
+                    <label for="sigla-equipe">Sigla da Equipe *</label>
+                    <input
+                        id="sigla-equipe"
+                        name="sigla-equipe"
+                        type="text"
+                        maxlength="5"
+                        placeholder="TFC"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="cargo">Cargo na Equipe *</label>
+                    <select
+                        id="cargo"
+                        name="cargo"
+                        required>
+
+                        <option value="">Selecione</option>
+                        <option value="diretor">Diretor</option>
+                        <option value="presidente">Presidente</option>
+                        <option value="gerente">Gerente</option>
+                        <option value="treinador">Treinador</option>
+
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="linha">
+
+                <div class="campo">
+                    <label for="modalidade">Modalidade Principal *</label>
+
+                    <select
+                        id="modalidade"
+                        name="modalidade"
+                        required>
+
+                        <option value="">Selecione</option>
+                        <option>Atletismo</option>
+                        <option>Luta</option>
+                        <option>Futebol</option>
+                        <option>Futsal</option>
+                        <option>Voleibol</option>
+                        <option>Basquetebol</option>
+                        <option>Handebol</option>
+                        <option>Xadrez</option>
+                        <option>Robótica</option>
+                        <option>Programação</option>
+                        <option>Matemática</option>
+
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="ano-fundacao">Ano de Fundação</label>
+                    <input
+                        id="ano-fundacao"
+                        name="ano-fundacao"
+                        type="number"
+                        min="1900"
+                        max="2099"
+                        placeholder="2020">
+                </div>
+
+            </div>
+
+            <div class="linha">
+
+                <div class="campo">
+                    <label for="cidade-equipe">Cidade da Equipe *</label>
+                    <input
+                        id="cidade-equipe"
+                        name="cidade-equipe"
+                        type="text"
+                        placeholder="Joinville"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="estado-equipe">Estado *</label>
+                    <input
+                        id="estado-equipe"
+                        name="estado-equipe"
+                        type="text"
+                        placeholder="SC"
+                        required>
+                </div>
+
+            </div>
+
+            <div class="campo">
+                <label for="descricao-equipe">Descrição da Equipe</label>
+
+                <textarea
+                    id="descricao-equipe"
+                    name="descricao-equipe"
+                    rows="4"
+                    placeholder="Conte um pouco sobre sua equipe..."></textarea>
+            </div>
+
+            <div class="linha">
+
+                <div class="campo">
+                    <label for="email-equipe">E-mail da Equipe</label>
+                    <input
+                        id="email-equipe"
+                        name="email-equipe"
+                        type="email"
+                        placeholder="contato@equipe.com">
+                </div>
+
+                <div class="campo">
+                    <label for="telefone-equipe">Telefone da Equipe</label>
+                    <input
+                        id="telefone-equipe"
+                        name="telefone-equipe"
+                        type="tel"
+                        placeholder="(47) 99999-9999">
+                </div>
+
+            </div>
+
+            <div class="campo">
+                <label for="instagram">Instagram da Equipe</label>
+                <input
+                    id="instagram"
+                    name="instagram"
+                    type="text"
+                    placeholder="@tigresfc">
+            </div>
+
+            <div class="campo">
+                <label for="escudo">Escudo da Equipe</label>
+                <input
+                    id="escudo"
+                    name="escudo"
+                    type="file"
+                    accept=".png,.jpg,.jpeg,.svg">
+            </div>
+
+            <!-- Senhas -->
+            <div class="linha">
+                <div class="campo">
+                    <label for="senha">Senha *</label>
+                    <input
+                        id="senha"
+                        name="senha"
+                        type="password"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="confirmar-senha">Repetir Senha *</label>
+                    <input
+                        id="confirmar-senha"
+                        name="confirmar-senha"
+                        type="password"
+                        required>
+                </div>
+            </div>
+
+            <!-- Termos -->
+            <p class="texto-termos">
+                Ao criar sua conta, você concorda com os Termos de Uso
+                e Política de Privacidade da Arena+.
+            </p>
+
+            <!-- Botão -->
+            <button class="btn btn--primario" type="submit">
+                Criar Conta
+            </button>
+
+        </form>
+
+    </main>
+
+</body>
+</html>

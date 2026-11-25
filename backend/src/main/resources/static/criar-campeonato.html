@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arena+ | Criar Campeonato</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/criar-campeonato.css">
+</head>
+
+<script src="js/criar-campeonato.js"></script>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="assets/marca-arena.svg" alt="Arena+">
+            </div>
+
+            <ul class="menu">
+                <li><a href="home.html">Início</a></li>
+                <li><a href="campeonatos.html">Campeonatos</a></li>
+                <li><a href="calendario.html">Calendário</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="container-cadastro">
+
+        <section class="card formulario-campeonato">
+
+            <div class="titulo-formulario">
+                <h1>🏆 Criar Campeonato</h1>
+
+                <p>
+                    Cadastre um novo campeonato para gerenciamento na plataforma Arena+.
+                </p>
+            </div>
+
+            <form>
+
+                <div class="grupo-formulario">
+
+                    <label for="nome">
+                        Nome do Campeonato
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Ex: Campeonato Brasileiro de Xadrez"
+                        required>
+
+                </div>
+
+                <div class="linha-formulario">
+
+                    <div class="grupo-formulario">
+
+                        <label for="modalidade">
+                            Modalidade
+                        </label>
+
+                        <select id="modalidade">
+
+                            <option>Selecione</option>
+                            <option>Xadrez</option>
+                            <option>Robótica</option>
+                            <option>Multimodal</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="grupo-formulario">
+
+                        <label for="equipes">
+                            Limite de Equipes
+                        </label>
+
+                        <input
+                            type="number"
+                            id="equipes"
+                            min="2"
+                            placeholder="16">
+
+                    </div>
+
+                </div>
+
+                <div class="linha-formulario">
+
+                    <div class="grupo-formulario">
+
+                        <label for="dataInicio">
+                            Data de Início
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dataInicio">
+
+                    </div>
+
+                    <div class="grupo-formulario">
+
+                        <label for="dataFim">
+                            Data de Término
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dataFim">
+
+                    </div>
+
+                </div>
+
+                <div class="grupo-formulario">
+
+                    <label for="local">
+                        Local ou Instituição
+                    </label>
+
+                    <input
+                        type="text"
+                        id="local"
+                        placeholder="Ex: Universidade Federal de Santa Catarina">
+
+                </div>
+
+                <div class="grupo-formulario">
+
+                    <label for="descricao">
+                        Descrição
+                    </label>
+
+                    <textarea
+                        id="descricao"
+                        rows="5"
+                        placeholder="Descreva o campeonato..."></textarea>
+
+                </div>
+
+                <div class="grupo-formulario">
+
+                    <label for="status">
+                        Status Inicial
+                    </label>
+
+                    <select id="status">
+
+                        <option>Inscrições Abertas</option>
+                        <option>Em Andamento</option>
+                        <option>Encerrado</option>
+
+                    </select>
+
+                </div>
+
+                <div class="acoes-formulario">
+
+                    <a href="home.html" class="btn-cancelar">
+                        Cancelar
+                    </a>
+
+                    <button
+                        type="submit"
+                        class="btn-criar">
+
+                        Criar Campeonato
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
