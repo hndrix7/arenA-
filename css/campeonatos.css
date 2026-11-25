@@ -1,210 +1,85 @@
-/* ==========================
-   CONTAINER
-========================== */
-
-.container-campeonato{
+.container-campeonatos {
     max-width: 1200px;
     margin: 40px auto;
-    padding: 20px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    padding: 0 20px;
 }
 
-/* ==========================
-   BANNER
-========================== */
-
-.banner-campeonato{
-    background: linear-gradient(
-        135deg,
-        #014d39,
-        #0a6349
-    );
-
-    color: white;
-
-    border-radius: 15px;
-
-    padding: 30px;
-
-    display: flex;
-    align-items: center;
-    gap: 25px;
+.hero-campeonatos {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.icone-campeonato{
-    font-size: 4rem;
-}
-
-.banner-campeonato h1{
+.hero-campeonatos h1 {
+    color: var(--verde-escuro);
     margin-bottom: 10px;
 }
 
-.banner-campeonato p{
-    margin-bottom: 10px;
+.lista-campeonatos {
+    display: grid;
+    gap: 25px;
 }
 
-/* ==========================
-   STATUS
-========================== */
+.campeonato-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    transition: .3s;
+}
 
-.status{
+.campeonato-card:hover {
+    transform: translateY(-4px);
+}
+
+.status {
     display: inline-block;
-
-    padding: 6px 12px;
-
-    border-radius: 20px;
-
-    font-size: .9rem;
-
+    background: #22c55e;
+    color: #fff;
+    font-size: .8rem;
     font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-bottom: 16px;
 }
 
-.andamento{
-    background: #d1fae5;
-    color: #065f46;
+.campeonato-card h2 {
+    color: var(--verde-escuro);
+    margin-bottom: 10px;
 }
 
-/* ==========================
-   CARDS
-========================== */
-
-.card{
-    background: white;
-
-    border-radius: 15px;
-
-    padding: 25px;
-
-    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+.campeonato-card p {
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
-.card h2{
-    color: #014d39;
+.campeonato-info {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
-/* ==========================
-   INFORMAÇÕES
-========================== */
-
-.info-grid{
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 20px;
+.campeonato-info div {
+    display: flex;
+    flex-direction: column;
 }
 
-.info-grid div{
-    background: #f5f5f5;
-
-    padding: 15px;
-
-    border-radius: 10px;
+.campeonato-info strong {
+    color: var(--verde-escuro);
+    margin-bottom: 4px;
 }
 
-.info-grid strong{
-    color: #014d39;
-    display: block;
-    margin-bottom: 8px;
-}
-
-/* ==========================
-   TABELA
-========================== */
-
-table{
-    width: 100%;
-    border-collapse: collapse;
-}
-
-thead{
-    background: #014d39;
+.btn-detalhes {
+    display: inline-block;
+    background: var(--verde-escuro);
     color: white;
-}
-
-th,
-td{
-    padding: 15px;
-    text-align: center;
-}
-
-tbody tr:nth-child(even){
-    background: #f5f5f5;
-}
-
-tbody tr:hover{
-    background: #e8f5f0;
-}
-
-/* ==========================
-   PARTIDAS
-========================== */
-
-.partida{
-    background: #f5f5f5;
-
-    padding: 15px;
-
+    text-decoration: none;
+    padding: 12px 24px;
     border-radius: 10px;
-
-    margin-bottom: 15px;
-
-    text-align: center;
+    font-weight: 600;
+    transition: .3s;
 }
 
-.partida strong{
-    color: #014d39;
-}
-
-.partida span{
-    margin: 0 10px;
-    color: #666;
-}
-
-.partida p{
-    margin-top: 10px;
-    color: #777;
-}
-
-/* ==========================
-   REGULAMENTO
-========================== */
-
-.regulamento p{
-    line-height: 1.8;
-    color: #444;
-    margin-bottom: 15px;
-}
-
-/* ==========================
-   RESPONSIVIDADE
-========================== */
-
-@media(max-width: 900px){
-
-    .info-grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-@media(max-width: 600px){
-
-    .banner-campeonato{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .info-grid{
-        grid-template-columns: 1fr;
-    }
-
-    table{
-        font-size: .9rem;
-    }
-
+.btn-detalhes:hover {
+    background: var(--verde);
 }

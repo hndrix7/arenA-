@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Arena+ | Detalhes do Campeonato</title>
+    <title>Arena+ | Campeonatos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/campeonatos.css">
 </head>
 
@@ -26,175 +32,140 @@
                 <li><a href="home.html">Início</a></li>
                 <li><a href="campeonatos.html">Campeonatos</a></li>
                 <li><a href="calendario.html">Calendário</a></li>
-                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="index.html">Entrar</a></li>
             </ul>
 
         </nav>
 
     </header>
 
-    <!-- CONTEÚDO -->
-    <main class="container-campeonato">
+    <main class="container-campeonatos">
 
-        <!-- CABEÇALHO -->
-        <section class="banner-campeonato">
+        <section class="hero-campeonatos">
 
-            <span class="icone-campeonato">🏆</span>
+            <h1>Campeonatos em Andamento</h1>
 
-            <div>
+            <p>
+                Acompanhe competições de robótica, xadrez e eventos acadêmicos em tempo real.
+            </p>
 
-                <h1>TUSCA 2026</h1>
+        </section>
 
-                <p>
-                    Torneio Universitário de São Carlos
-                </p>
+        <section class="lista-campeonatos">
 
-                <span class="status andamento">
-                    Em andamento
+            <!-- CAMPEONATO 1 -->
+            <article class="campeonato-card">
+
+                <span class="status aberto">
+                    EM ANDAMENTO
                 </span>
 
-            </div>
+                <h2>Campeonato Brasileiro de Xadrez 2026</h2>
 
-        </section>
+                <p>
+                    Competição nacional reunindo os principais enxadristas universitários do país.
+                </p>
 
-        <!-- INFORMAÇÕES -->
-        <section class="card informacoes-campeonato">
+                <div class="campeonato-info">
 
-            <h2>Informações Gerais</h2>
+                    <div>
+                        <strong>Modalidade</strong>
+                        <span>Xadrez</span>
+                    </div>
 
-            <div class="info-grid">
+                    <div>
+                        <strong>Equipes</strong>
+                        <span>12</span>
+                    </div>
 
-                <div>
-                    <strong>Modalidade</strong>
-                    <p>Esportes Universitários</p>
+                    <div>
+                        <strong>Rodada</strong>
+                        <span>5ª</span>
+                    </div>
+
                 </div>
 
-                <div>
-                    <strong>Início</strong>
-                    <p>10/11/2026</p>
+                <a href="detalhes-campeonato.html" class="btn-detalhes">
+                    Ver Detalhes
+                </a>
+
+            </article>
+
+            <!-- CAMPEONATO 2 -->
+            <article class="campeonato-card">
+
+                <span class="status aberto">
+                    EM ANDAMENTO
+                </span>
+
+                <h2>Torneio Nacional de Robótica</h2>
+
+                <p>
+                    Equipes universitárias competindo em desafios de programação e automação.
+                </p>
+
+                <div class="campeonato-info">
+
+                    <div>
+                        <strong>Modalidade</strong>
+                        <span>Robótica</span>
+                    </div>
+
+                    <div>
+                        <strong>Equipes</strong>
+                        <span>18</span>
+                    </div>
+
+                    <div>
+                        <strong>Rodada</strong>
+                        <span>3ª</span>
+                    </div>
+
                 </div>
 
-                <div>
-                    <strong>Término</strong>
-                    <p>30/11/2026</p>
+                <a href="detalhes-campeonato.html" class="btn-detalhes">
+                    Ver Detalhes
+                </a>
+
+            </article>
+
+            <!-- CAMPEONATO 3 -->
+            <article class="campeonato-card">
+
+                <span class="status aberto">
+                    EM ANDAMENTO
+                </span>
+
+                <h2>Copa Universitária Arena+</h2>
+
+                <p>
+                    Competição entre equipes acadêmicas de diversas instituições de ensino.
+                </p>
+
+                <div class="campeonato-info">
+
+                    <div>
+                        <strong>Modalidade</strong>
+                        <span>Multimodal</span>
+                    </div>
+
+                    <div>
+                        <strong>Equipes</strong>
+                        <span>20</span>
+                    </div>
+
+                    <div>
+                        <strong>Rodada</strong>
+                        <span>2ª</span>
+                    </div>
+
                 </div>
 
-                <div>
-                    <strong>Participantes</strong>
-                    <p>24 Equipes</p>
-                </div>
+                <a href="detalhes-campeonato.html" class="btn-detalhes">
+                    Ver Detalhes
+                </a>
 
-            </div>
-
-        </section>
-
-        <!-- CLASSIFICAÇÃO -->
-        <section class="card classificacao">
-
-            <h2>Classificação Atual</h2>
-
-            <table>
-
-                <thead>
-
-                    <tr>
-                        <th>Pos</th>
-                        <th>Equipe</th>
-                        <th>Pontos</th>
-                    </tr>
-
-                </thead>
-
-                <tbody>
-
-                    <tr>
-                        <td>1º</td>
-                        <td>Tigres FC</td>
-                        <td>25</td>
-                    </tr>
-
-                    <tr>
-                        <td>2º</td>
-                        <td>Sharks</td>
-                        <td>22</td>
-                    </tr>
-
-                    <tr>
-                        <td>3º</td>
-                        <td>Panthers</td>
-                        <td>20</td>
-                    </tr>
-
-                    <tr>
-                        <td>4º</td>
-                        <td>Falcons</td>
-                        <td>18</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-
-        </section>
-
-        <!-- PARTIDAS -->
-        <section class="card partidas">
-
-            <h2>Próximas Partidas</h2>
-
-            <div class="partida">
-
-                <strong>Tigres FC</strong>
-
-                <span>vs</span>
-
-                <strong>Leões SC</strong>
-
-                <p>25/11 • 19:00</p>
-
-            </div>
-
-            <div class="partida">
-
-                <strong>Sharks</strong>
-
-                <span>vs</span>
-
-                <strong>Falcons</strong>
-
-                <p>26/11 • 16:30</p>
-
-            </div>
-
-            <div class="partida">
-
-                <strong>Panthers</strong>
-
-                <span>vs</span>
-
-                <strong>Wolves</strong>
-
-                <p>27/11 • 18:00</p>
-
-            </div>
-
-        </section>
-
-        <!-- REGULAMENTO -->
-        <section class="card regulamento">
-
-            <h2>Regulamento</h2>
-
-            <p>
-                O campeonato será disputado em fase classificatória
-                seguida de mata-mata. Cada vitória vale 3 pontos,
-                empate vale 1 ponto e derrota não pontua.
-            </p>
-
-            <p>
-                Em caso de empate na classificação serão considerados:
-                saldo de gols, gols marcados e confronto direto.
-            </p>
+            </article>
 
         </section>
 
