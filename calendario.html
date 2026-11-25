@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena+ | Calendário</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/calendario.css">
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="assets/marca-arena.svg" alt="Arena+">
+            </div>
+
+            <ul class="menu">
+                <li><a href="home.html">Início</a></li>
+                <li><a href="#">Jogos</a></li>
+                <li><a href="calendario.html">Calendário</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- CONTEÚDO -->
+
+    <main class="container-calendario">
+
+        <section class="cabecalho-calendario">
+
+            <h1>Calendário de Jogos</h1>
+
+            <p>
+                Acompanhe datas de jogos, campeonatos e eventos.
+            </p>
+
+        </section>
+
+        <section class="filtros">
+
+            <select>
+                <option>Todos</option>
+                <option>Robótica</option>
+                <option>Xadrez</option>
+            </select>
+
+        </section>
+
+        <section class="calendario-card">
+
+            <div id="calendar"></div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    <script src="js/calendario.js"></script>
+
+</body>
+</html>

@@ -71,3 +71,40 @@ img { max-width: 100%; display: block; }
 }
 .alerta--erro { color: var(--vermelho); background: #fdf0f0; border: 1px solid var(--vermelho); }
 .alerta[hidden] { display: none; }
+
+/* HEADER */
+
+.header{
+    background-color: #014d39;
+    padding: 20px;
+}
+
+.navbar{
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.logo img{
+    width: 60px;
+    height: auto;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+
+    background-color: #0a6349;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
